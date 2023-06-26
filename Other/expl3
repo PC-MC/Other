@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Введите ваше ФИО</title>
+    </head>
+    <body>
+        <h1>Введите ваше ФИО:</h1>
+        <input type="text" id="name" placeholder="ФИО" />
+        <button type="button" onclick="submitForm()">Отправить</button>
+        <div id="result"></div>
+        <script>
+            function submitForm() {
+                const nameInput = document.getElementById('name');
+                const resultDiv = document.getElementById('result');
+                const name = nameInput.value.trim();
+                if (name === '') {
+                    resultDiv.innerHTML = 'Пожалуйста, введите ваше ФИО';
+                    return;
+                }
+                resultDiv.innerHTML = `Ваше ФИО: ${name}`;
+            }
+        </script>
+    </body>
+</html>
