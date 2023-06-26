@@ -1,0 +1,21 @@
+-- create
+CREATE TABLE groupmates (
+  grId INTEGER PRIMARY KEY,
+  name TEXT NOT NULL,
+  age INTEGER NOT NULL,
+  address TEXT NOT NULL
+);
+
+-- insert
+INSERT INTO groupmates VALUES (0001, 'Иван', '22', 'Москва');
+INSERT INTO groupmates VALUES (0002, 'Ася', '35', 'Абакан');
+INSERT INTO groupmates VALUES (0003, 'Юрий', '27', 'Киев');
+INSERT INTO groupmates VALUES (0004, 'Виктория', '18', 'Стамбул');
+INSERT INTO groupmates VALUES (0005, 'Ирина', '21', 'Париж');
+INSERT INTO groupmates VALUES (0006, 'Александр', '30', 'Рим');
+INSERT INTO groupmates VALUES (0007, 'Мария', '43', 'Рязань');
+INSERT INTO groupmates VALUES (0008, 'Оксана', '18', 'Москва');
+
+
+-- fetch 
+SELECT * FROM groupmates WHERE address = 'Москва';
